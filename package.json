@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"gulp-beautify",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "gulp-beautify",
+    "description": "api documentation for [gulp-beautify (v2.0.1)](http://github.com/wearefractal/gulp-beautify) [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-beautify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-beautify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-beautify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-beautify)",
     "devDependencies": {
-        "gulp-beautify": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "gulp-beautify": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-gulp-beautify",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-gulp-beautify",
+    "keywords": [
+        "documentation",
+        "gulp-beautify"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_gulp_beautify.js",
+    "name": "npmdoc-gulp-beautify",
+    "nameAlias": "npmdoc_gulp_beautify",
+    "nameOriginal": "npmdoc-gulp-beautify",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-gulp-beautify"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
