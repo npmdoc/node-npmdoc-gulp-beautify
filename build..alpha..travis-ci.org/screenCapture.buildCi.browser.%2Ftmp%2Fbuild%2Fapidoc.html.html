@@ -54,12 +54,50 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-beautify">module gulp-beautify</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-beautify.gulp-beautify">
+            function <span class="apidocSignatureSpan"></span>gulp-beautify
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-beautify" id="apidoc.module.gulp-beautify">module gulp-beautify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-beautify.gulp-beautify" id="apidoc.element.gulp-beautify.gulp-beautify">
+        function <span class="apidocSignatureSpan"></span>gulp-beautify
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-beautify = function (opts) {
+  var rcLoader = new RcLoader('.jsbeautifyrc', opts, { loader: 'async' });
+
+  function modifyFile(file, enc, cb) {
+    if (file.isNull()) return cb(null, file); // pass along
+    if (file.isStream()) return cb(new Error('gulp-beautify: Streaming not supported'));
+    rcLoader.for(file.path, function (err, opts) {
+      if (err) return cb(err);
+
+      var str = file.contents.toString('utf8');
+      file.contents = new Buffer(beautify(str, opts));
+      cb(null, file);
+    });
+  }
+
+  return through.obj(modifyFile);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
