@@ -1,9 +1,14 @@
-# api documentation for  [gulp-beautify (v2.0.1)](http://github.com/wearefractal/gulp-beautify)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-beautify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-beautify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-beautify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-beautify)
+# npmdoc-gulp-beautify
+
+#### api documentation for  [gulp-beautify (v2.0.1)](http://github.com/wearefractal/gulp-beautify)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-beautify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-beautify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-beautify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-beautify)
+
 #### Asset beautification using node-beautify
 
-[![NPM](https://nodei.co/npm/gulp-beautify.png?downloads=true)](https://www.npmjs.com/package/gulp-beautify)
+[![NPM](https://nodei.co/npm/gulp-beautify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-beautify)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-beautify/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-beautify_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-beautify/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-beautify/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-beautify/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-beautify/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-beautify/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-beautify/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Fractal",
-        "email": "contact@wearefractal.com",
         "url": "http://wearefractal.com/"
     },
     "bugs": {
@@ -58,17 +62,14 @@
     "main": "./index.js",
     "maintainers": [
         {
-            "name": "contra",
-            "email": "contra@wearefractal.com"
+            "name": "contra"
         },
         {
-            "name": "fractal",
-            "email": "contact@wearefractal.com"
+            "name": "fractal"
         }
     ],
     "name": "gulp-beautify",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/wearefractal/gulp-beautify.git"
@@ -79,16 +80,6 @@
     "version": "2.0.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-beautify](#apidoc.module.gulp-beautify)
-
-
-
-# <a name="apidoc.module.gulp-beautify"></a>[module gulp-beautify](#apidoc.module.gulp-beautify)
 
 
 
